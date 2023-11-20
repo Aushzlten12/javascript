@@ -18,4 +18,6 @@ Al convertir con `Boolean()` a cualquier de los siete valores `Falsy` retorna `f
 
 **Preguntas**
 
-- `[1, 2, 3] + [4, 5, 6]`, retorna `'1,2,34,5,6'` al usar `+` retorna un `string` 
+- `[1, 2, 3] + [4, 5, 6]`, retorna `'1,2,34,5,6'` al usar `+` retorna un `string` asume que el contenido dentro de `[]` como una cadena y al sumarlo solo concatena el contenido dentro de los corchetes.
+- `!![]` retorna true, empiezo teniendo un array `[]` vacío pero es un array. Al ejecutar `![]` retorna false, como hay un array su valor booleano es true, al negarlo es false, y negarlo dos veces retorna `true`.
+- `[] == true` es false, ya que no se relacionan entre booleanos no tiene por defecto su valor `true` solo que al usar `!` intrinsecamente hace `Boolean([])` eso retorna `true`.
